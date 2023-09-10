@@ -1,4 +1,3 @@
-```markdown
 # Django API for Managing People
 
 ![Django](https://img.shields.io/badge/Django-3.0%2B-brightgreen)
