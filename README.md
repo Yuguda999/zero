@@ -1,11 +1,10 @@
-```markdown
 # Django API for Managing People
-
+```markdown
 ![Django](https://img.shields.io/badge/Django-3.0%2B-brightgreen)
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
-
-This Django API allows you to manage information about people with CRUD (Create, Read, Update, Delete) operations. You can add, retrieve, update, and delete person records using this API.
 ```
+This Django API allows you to manage information about people with CRUD (Create, Read, Update, Delete) operations. You can add, retrieve, update, and delete person records using this API.
+
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
