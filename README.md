@@ -1,3 +1,4 @@
+```markdown
 # Django API for Managing People
 
 ![Django](https://img.shields.io/badge/Django-3.0%2B-brightgreen)
@@ -171,3 +172,7 @@ For detailed API documentation, including request/response formats and more exam
 ## Contributing
 
 Contributions are welcome! Feel free to open issues or submit pull requests to improve this API.
+
+## License
+
+Yuguda
