@@ -78,14 +78,14 @@ Before you begin, ensure you have met the following requirements:
 
 ### 1. Add a New Person
 
-- **Endpoint:** `POST /api/people/`
+- **Endpoint:** `POST /api`
 
 To add a new person, send a POST request with the person's data in the request body. Replace `<api_base_url>` with the actual URL where the API is hosted.
 
 **Request:**
 
 ```http
-POST <api_base_url>/api/people/
+POST <api_base_url>/api
 Content-Type: application/json
 
 {
@@ -103,14 +103,14 @@ Content-Type: application/json
 
 ### 2. Fetch Details of a Person
 
-- **Endpoint:** `GET /api/people/{name}/`
+- **Endpoint:** `GET /api/{name}`
 
 To fetch details of a person by name, send a GET request with the person's name in the URL. Replace `<api_base_url>` and `{name}` with the actual API URL and person's name.
 
 **Request:**
 
 ```http
-GET <api_base_url>/api/people/Mark%20Essien/
+GET <api_base_url>/api/Mark%20Essien/
 ```
 
 **Response (200 OK):**
@@ -123,14 +123,14 @@ GET <api_base_url>/api/people/Mark%20Essien/
 
 ### 3. Modify the Details of an Existing Person
 
-- **Endpoint:** `PUT /api/people/{name}/` or `PATCH /api/people/{name}/`
+- **Endpoint:** `PUT /api/{name}/` or `PATCH /api/{name}/`
 
 To modify the details of an existing person, send a PUT or PATCH request with the updated data in the request body and the person's name in the URL. Replace `<api_base_url>`, `{name}`, and the request body with actual values.
 
 **Request (PUT):**
 
 ```http
-PUT <api_base_url>/api/people/Mark%20Essien/
+PUT <api_base_url>/api/Mark%20Essien/
 Content-Type: application/json
 
 {
@@ -148,14 +148,14 @@ Content-Type: application/json
 
 ### 4. Remove a Person
 
-- **Endpoint:** `DELETE /api/people/{name}/`
+- **Endpoint:** `DELETE /api/{name}/`
 
 To remove a person by name, send a DELETE request with the person's name in the URL. Replace `<api_base_url>` and `{name}` with the actual API URL and person's name.
 
 **Request:**
 
 ```http
-DELETE <api_base_url>/api/people/Updated%20Mark%20Essien/
+DELETE <api_base_url>/api/Updated%20Mark%20Essien/
 ```
 
 **Response (204 No Content)**
