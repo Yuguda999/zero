@@ -1,6 +1,6 @@
 import requests
 
-base_url = 'http://localhost:8000/api/people/'  # Update with your API URL
+base_url = 'http://localhost:8000/api/'  # Update with your API URL
 
 
 # Function to make a POST request to add a new person
