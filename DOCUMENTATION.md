@@ -24,7 +24,7 @@ This document provides detailed information about the endpoints, request/respons
 
 ### 1. Add a New Person
 
-- **Endpoint:** `POST /api/people/`
+- **Endpoint:** `POST /api/`
 - **Description:** This endpoint allows you to add a new person to the database.
 - **Request Format:**
   ```json
@@ -41,7 +41,7 @@ This document provides detailed information about the endpoints, request/respons
 
 ### 2. Fetch Details of a Person
 
-- **Endpoint:** `GET /api/people/{name}/`
+- **Endpoint:** `GET /api/{name}/`
 - **Description:** This endpoint allows you to fetch details of a person by their name.
 - **Response Format:**
   ```json
@@ -52,7 +52,7 @@ This document provides detailed information about the endpoints, request/respons
 
 ### 3. Modify the Details of an Existing Person
 
-- **Endpoint:** `PUT /api/people/{name}/` or `PATCH /api/people/{name}/`
+- **Endpoint:** `PUT /api/{name}/` or `PATCH /api/{name}/`
 - **Description:** This endpoint allows you to modify the details of an existing person by their name.
 - **Request Format:**
   ```json
@@ -69,7 +69,7 @@ This document provides detailed information about the endpoints, request/respons
 
 ### 4. Remove a Person
 
-- **Endpoint:** `DELETE /api/people/{name}/`
+- **Endpoint:** `DELETE /api/{name}/`
 - **Description:** This endpoint allows you to remove a person by their name.
 - **Response Format:** 204 No Content
 
@@ -83,7 +83,7 @@ Detailed request and response formats for each endpoint are provided in the "End
 
 **Request:**
 ```http
-POST <api_base_url>/api/people/
+POST <api_base_url>/api/
 Content-Type: application/json
 
 {
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 **Request:**
 ```http
-GET <api_base_url>/api/people/Mark%20Essien/
+GET <api_base_url>/api/Mark%20Essien/
 ```
 
 **Response (200 OK):**
@@ -116,7 +116,7 @@ GET <api_base_url>/api/people/Mark%20Essien/
 
 **Request (PUT):**
 ```http
-PUT <api_base_url>/api/people/Mark%20Essien/
+PUT <api_base_url>/api/Mark%20Essien/
 Content-Type: application/json
 
 {
@@ -135,7 +135,7 @@ Content-Type: application/json
 
 **Request:**
 ```http
-DELETE <api_base_url>/api/people/Updated%20Mark%20Essien/
+DELETE <api_base_url>/api/Updated%20Mark%20Essien/
 ```
 
 **Response (204 No Content)**
